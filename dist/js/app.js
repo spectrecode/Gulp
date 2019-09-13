@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){var e=document.querySelector(".burguer"),t=document.querySelector(".linesE"),n=document.getElementById("header");e.addEventListener("click",function(){e.classList.toggle("transform"),t.classList.toggle("linesBurguer"),n.classList.toggle("velo")})});

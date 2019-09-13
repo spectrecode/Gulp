@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#body .section {
+  height: 100vh;
+  width: 85%;
+  margin: auto;
+  max-width: 1450px;
+}
+
+header #header {
+  width: 85%;
+  margin: auto;
+  max-width: 1450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .box_header .burguer {
+  cursor: pointer;
+  width: 70px;
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+header .box_header .burguer:before {
+  content: '';
+  width: 100%;
+  height: 60px;
+  top: -1px;
+  position: absolute;
+  background: linear-gradient(321deg, rgba(255, 255, 255, 0) 30%, #FFFFFE 39%, rgba(255, 255, 255, 0) 48%);
+  background-size: 600% 500%;
+  -webkit-animation: lineCat 1s linear infinite;
+          animation: lineCat 1s linear infinite;
+}
+
+header .box_header .burguer .line {
+  margin-bottom: 6px;
+  height: 4px;
+  background-color: #000000;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+header .box_header .burguer .linesE {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+
+header .box_header .burguer .linesE .line {
+  width: 20px;
+}
+
+header .box_header .burguer .linesE .line:first-child {
+  width: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .box_header .burguer .linesE.linesBurguer {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+header .box_header .burguer .linesH .line:last-child {
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .box_header .burguer.transform {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 60px;
+}
+
+header .box_header .burguer.transform .line {
+  margin-bottom: 8px;
+  background-color: #fff;
+}
+
+header .box_header .burguer.transform .linesH .line:last-child {
+  width: 60px;
+}
+
+header .box_header .burguer.transform:before {
+  display: none;
+}
+
+header .box_items {
+  width: 100%;
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .box_items a {
+  font-family: "niramitsemibold_italic";
+}
+
+@-webkit-keyframes lineCat {
+  0% {
+    background-position: 76% 100%;
+  }
+  100% {
+    background-position: 25% 0%;
+  }
+}
+
+@keyframes lineCat {
+  0% {
+    background-position: 76% 100%;
+  }
+  100% {
+    background-position: 25% 0%;
+  }
+}

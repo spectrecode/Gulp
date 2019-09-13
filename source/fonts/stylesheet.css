@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'niramitextralight_italic';
+    src: url('niramit-extralightitalic-webfont.eot');
+    src: url('niramit-extralightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('niramit-extralightitalic-webfont.woff') format('woff'),
+         url('niramit-extralightitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
