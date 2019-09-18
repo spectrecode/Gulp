@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+#body {
+  background-color: blue;
+}
+
 #body .section {
   height: 100vh;
   width: 85%;
@@ -119,8 +123,9 @@ header .box_items {
           justify-content: space-between;
 }
 
-header .box_items a {
-  font-family: "niramitsemibold_italic";
+.imagen {
+  background-size: contain;
+  height: 200px;
 }
 
 @-webkit-keyframes lineCat {

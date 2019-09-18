@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'livvicblack';
+    src: url('//dist/fonts/livvic-black-webfont.eot');
+    src: url('//dist/fonts/livvic-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('//dist/fonts/livvic-black-webfont.woff') format('woff'),
+         url('//dist/fonts/livvic-black-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'livvicblack_italic';
+    src: url('livvic-blackitalic-webfont.eot');
+    src: url('livvic-blackitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('livvic-blackitalic-webfont.woff') format('woff'),
+         url('livvic-blackitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'livvicbold';
+    src: url('livvic-bold-webfont.eot');
+    src: url('livvic-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('livvic-bold-webfont.woff') format('woff'),
+         url('livvic-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'livvicbold_italic';
+    src: url('livvic-bolditalic-webfont.eot');
+    src: url('livvic-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('livvic-bolditalic-webfont.woff') format('woff'),
+         url('livvic-bolditalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'livvicextralight_italic';
+    src: url('livvic-extralightitalic-webfont.eot');
+    src: url('livvic-extralightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('livvic-extralightitalic-webfont.woff') format('woff'),
+         url('livvic-extralightitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'livviclight';
+    src: url('livvic-light-webfont.eot');
+    src: url('livvic-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('livvic-light-webfont.woff') format('woff'),
+         url('livvic-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'livviclight_italic';
+    src: url('livvic-lightitalic-webfont.eot');
+    src: url('livvic-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('livvic-lightitalic-webfont.woff') format('woff'),
+         url('livvic-lightitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'livvicextralight';
+    src: url('livvic-extralight-webfont.eot');
+    src: url('livvic-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('livvic-extralight-webfont.woff') format('woff'),
+         url('livvic-extralight-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'livvicmedium_italic';
+    src: url('livvic-mediumitalic-webfont.eot');
+    src: url('livvic-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('livvic-mediumitalic-webfont.woff') format('woff'),
+         url('livvic-mediumitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'livvicregular';
+    src: url('livvic-regular-webfont.eot');
+    src: url('livvic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('livvic-regular-webfont.woff') format('woff'),
+         url('livvic-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'livvicitalic';
+    src: url('livvic-regularitalic-webfont.eot');
+    src: url('livvic-regularitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('livvic-regularitalic-webfont.woff') format('woff'),
+         url('livvic-regularitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'livvicmedium';
+    src: url('livvic-medium-webfont.eot');
+    src: url('livvic-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('livvic-medium-webfont.woff') format('woff'),
+         url('livvic-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'livvicthin';
+    src: url('livvic-thin-webfont.eot');
+    src: url('livvic-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('livvic-thin-webfont.woff') format('woff'),
+         url('livvic-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'livvicthin_italic';
+    src: url('livvic-thinitalic-webfont.eot');
+    src: url('livvic-thinitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('livvic-thinitalic-webfont.woff') format('woff'),
+         url('livvic-thinitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'livvicsemibold';
+    src: url('livvic-semibold-webfont.eot');
+    src: url('livvic-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('livvic-semibold-webfont.woff') format('woff'),
+         url('livvic-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'livvicsemibold_italic';
+    src: url('livvic-semibolditalic-webfont.eot');
+    src: url('livvic-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('livvic-semibolditalic-webfont.woff') format('woff'),
+         url('livvic-semibolditalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
