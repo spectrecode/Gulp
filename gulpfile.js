@@ -55,10 +55,35 @@ function images() {
     .pipe(gulp.dest('dist/img'));
 }
 
+function javascript(){
+    return gulp.src([
+        './source/javascript/javascript.js'
+    ])
+        .pipe(uglify())
+        .pipe(rename('app.js'))
+        .pipe(gulp.dest('dist/js/'))
+        .pipe(browserSync.stream())
+}
+function plugins(){
+    return gulp.src([
+        './source/javascript/plugins/*.js'
+    ])
+        .pipe(concat('plugins.js') )
+        .pipe(uglify({
+        compress:{
+            drop_console:true
+        }
+    }))
+        .pipe(gulp.dest('dist/js/plugins'))
+        .pipe(browserSync.stream())
+}
+
 function watchFiles() {
-    gulp.watch('source/sass/*.scss', style);
+    gulp.watch('source/sass/**/*.scss', style);
     gulp.watch('source/layouts/**/*.pug', templates);
     gulp.watch('source/images/*', images);
+    gulp.watch('source/javascript/**/*.js', javascript);
+    gulp.watch('source/javascript/plugins/*.js', plugins);
     gulp.watch('dist/**/*.html').on('change', browserSync.reload);
 }
 
@@ -67,25 +92,6 @@ function browser(){
         server: './dist/'
     })
 }
-// gulp.task('javascript', function(){
-//     return gulp.src('./source/javascript/*.js')
-//         .pipe(uglify())
-//         .pipe(rename('app.js'))
-//         .pipe(gulp.dest('dist/js/'))
-//         .pipe(browserSync.stream())
-// })
-// const build = gulp.series(gulp.parallel(style, templates, images));
-const watch = gulp.series(style, templates, images, gulp.parallel(watchFiles, browser));
+
+const watch = gulp.series(style, templates, images, javascript, plugins, gulp.parallel(watchFiles, browser));
 exports.default = watch;
-
-
-// gulp.task('default', function(){
-//     gulp.watch('source/sass/**/*.scss', gulp.series('sass'));
-//     gulp.watch('source/layouts/**/*.pug', gulp.series('pug'));
-//     gulp.watch('source/javascript/**/*.js', gulp.series('javascript'));
-//     gulp.watch('dist/**/*.html').on('change', browserSync.reload)
-//     browserSync.init({
-//         server: './dist',
-//         online: true
-//     });
-// })

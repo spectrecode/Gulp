@@ -1,0 +1,100 @@
+#portafolio{
+    background-color: #fff;
+    .box{
+        align-items: flex-end;
+        .mini:first-child, .mini:nth-child(2), .mini:nth-child(3){
+            margin-bottom: 20px;
+        }
+        .mini{
+            width: 340px;
+            height: 214px;
+            overflow: hidden;
+            border-radius: 15px;
+            position: relative;
+            cursor: pointer;
+            .image{
+                background-image: url('../img/0576.jpg');
+                background-size: 100%;
+                height: 214px;
+            }
+            &:hover .filtro{
+                opacity: 0;
+                transition: opacity ease-in-out .3s;
+            }
+            .filtro{
+                transition: opacity ease-in-out .3s;
+                &:after{
+                    content: '';
+                    overflow: hidden;
+                    width: 65%;
+                    max-height: 75px;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    top: 0;
+                    bottom: 0;
+                    background-size: 100%;
+                    background-image: url('../img/logoPotashSprite.png');
+                    background-repeat: no-repeat;
+                }
+                &:before{
+                    content:'';
+                    background-color: rgba(35, 49, 36, 0.76);
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                }
+            }
+        }
+        .mini.wallon{
+            .filtro:after{
+               background-image: url('../img/logo-wallon.png');
+            }
+            .image{
+                background-image: url('../img/walon_1537303663.png');                
+            }
+        }
+        .mini.movistar{
+            .filtro:after{
+               background-image: url('../img/logo-wallon.png');
+            }
+            .image{
+                background-image: url('../img/banner_ElDiaDeManaña_solo.png');
+                background-size: cover;
+                background-position: center;                
+            }
+        }
+        // > div:last-child{
+        //     margin-left: 100px;
+        //     width: 40%;
+        //     h4{
+        //         font-family: 'livvicsemibold';
+        //         font-size: 35px;
+        //     }
+        //     sub{
+        //         font-size: 16px;
+        //     }
+        //     p{
+        //         margin-top: 25px;
+        //         margin-bottom: 25px;
+        //         font-size: 20px;
+        //     }
+        //     a{
+        //         padding: 10px 20px;
+        //         border: 2px solid #000;
+        //         border-radius: 10px;
+        //         font-size: 22px;
+        //         display: inline-block;
+        //         font-family: 'livvicsemibold';
+        //         transition:all ease-in .2s;
+        //         &:hover{
+        //             background-color: #535455;
+        //             color:#fff;
+        //             transition: all ease-in .2s;
+        //         }
+        //     }
+        // }
+    }
+}

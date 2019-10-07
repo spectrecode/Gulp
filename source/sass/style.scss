@@ -2,15 +2,30 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'livviclight';
 }
-#body{
-	background-color: blue;
-    .section{
-		height: 100vh;
-		width: 85%;
-		margin:auto;
-		max-width: 1450px;
+a{
+	text-decoration: none;
+	color: #000;
+}
+.section{
+	.box{
+        display: flex;
+        width: 85%;
+        margin: auto;
+		max-width: 1440px;
+		flex-flow: wrap;
+		justify-content: space-around;
+		h3{
+			font-size:30px;
+			font-family: 'livvicsemibold';
+		}
 	}
 }
-// @import "globals/fonts";
-@import "sections/header";
+@import "globals/fonts";
+@import "./sections/header";
+@import "./sections/home";
+@import "./sections/perfil";
+@import "./sections/servicios";
+@import "./sections/portafolio";
+@import "./sections/contacto";

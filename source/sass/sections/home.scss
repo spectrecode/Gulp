@@ -1,0 +1,46 @@
+#home{
+    background-color: #fff;
+    .box{
+        & > div{
+            h2{
+                margin-bottom: 20px;
+                font-size: 30px;
+            }
+            h1{
+                font-family: 'livvicmedium';
+                font-size: 40px;
+            }
+        }
+        & div .imageHome{
+            background-image: url('../img/laptop.png');
+            background-size: cover;
+            height: 427px;
+            width: 580px;
+        }
+    }
+    #festejo{
+        height: 200px;
+        width: 400px;
+        left:0;
+        position: absolute;
+        background: url('../img/festejo.png') -889px -996px no-repeat;
+        animation: 
+            run-cycle .6s steps(12) 7,
+            // walk-cycle 1s steps(12) 4,
+            sit-down .5s steps(5) 4s 1;
+        animation-fill-mode: forwards;
+        z-index: 5;
+    }
+}
+@keyframes run-cycle {  
+    0% { background-position: -1px 0; } 
+    100% {background-position: -1px -2391px; } 
+}
+@keyframes walk-cycle {  
+    0% { background-position: -1200px 0; } 
+    100% {background-position: -1200px -2391px; } 
+}
+@keyframes sit-down {  
+    0% { background-position: -800px 0; } 
+    100% {background-position: -800px -1000px; } 
+}

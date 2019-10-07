@@ -1,5 +1,6 @@
 header{
   #header{
+    position: fixed;
     width: 85%;
     margin:auto;
     max-width: 1450px;
@@ -7,6 +8,9 @@ header{
     justify-content: space-between;
     height: 90px;
     align-items: center;
+    right: 0;
+    left: 0;
+    z-index: 10;
   }
   .box_header{
     .burguer{
@@ -85,15 +89,10 @@ header{
     max-width: 500px;
     display: flex;
     justify-content: space-between;
-    // a{
-    //   font-family: "livvicblack";
-    // }
+    a{
+      font-family: "livvicbold";
+    }
   }
-}
-.imagen{
-  // background-image: url("//cat.jpg");
-  background-size: contain;
-  height: 200px;
 }
 @keyframes lineCat{
   0%{background-position:76% 100%}

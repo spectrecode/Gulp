@@ -5,9 +5,16 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="css/jquery.pagepiling.css")
         title Document
     body
-        #body
-            include includes/header
+        include includes/header
+        #pagepiling
+            include includes/home
+            include includes/perfil
+            include includes/servicios
+            include includes/portafolio
+            include includes/contacto
 
+    script(src="js/plugins/plugins.js")
     script(src="js/app.js")

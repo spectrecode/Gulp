@@ -1,0 +1,48 @@
+#contacto{
+    background-image:url('../img/lienzo.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    .box{
+        flex-direction: column;
+        text-align: center;
+    }
+    .box_contacto{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .hamburguesa{
+            background-image:url('../img/hamburguesa.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 180px;
+            width: 282px;
+            margin-bottom: 145px;
+            z-index: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        a{
+            color: #FFF;
+            position:relative;
+            font-size: 55px;
+            color:#000;
+        }
+        a:after{
+            content: '';
+            width: 100px;
+            height: 100px;
+            background-color: #ffe600;
+            position: absolute;
+            margin: auto;
+            left: -22px;
+            right: 0;
+            z-index: -1;
+            bottom: 0;
+            top: 0;
+            border-radius: 25%;
+        }
+        
+    }
+}

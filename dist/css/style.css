@@ -1,22 +1,207 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'livviclight';
 }
 
-#body {
-  background-color: blue;
+a {
+  text-decoration: none;
+  color: #000;
 }
 
-#body .section {
-  height: 100vh;
+.section .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 85%;
   margin: auto;
-  max-width: 1450px;
+  max-width: 1440px;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section .box h3 {
+  font-size: 30px;
+  font-family: 'livvicsemibold';
+}
+
+@font-face {
+  font-family: 'livvicblack';
+  src: url("../fonts/livvic-black-webfont.eot");
+  src: url("../fonts/livvic-black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/livvic-black-webfont.woff") format("woff"), url("../fonts/livvic-black-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'livvicblack_italic';
+  src: url("../fonts/livvic-blackitalic-webfont.eot");
+  src: url("../fonts/livvic-blackitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/livvic-blackitalic-webfont.woff") format("woff"), url("../fonts/livvic-blackitalic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'livvicbold';
+  src: url("../fonts/livvic-bold-webfont.eot");
+  src: url("../fonts/livvic-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/livvic-bold-webfont.woff") format("woff"), url("../fonts/livvic-bold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'livvicbold_italic';
+  src: url("../fonts/livvic-bolditalic-webfont.eot");
+  src: url("../fonts/livvic-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/livvic-bolditalic-webfont.woff") format("woff"), url("../fonts/livvic-bolditalic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'livvicextralight_italic';
+  src: url("../fonts/livvic-extralightitalic-webfont.eot");
+  src: url("../fonts/livvic-extralightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/livvic-extralightitalic-webfont.woff") format("woff"), url("../fonts/livvic-extralightitalic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'livviclight';
+  src: url("../fonts/livvic-light-webfont.eot");
+  src: url("../fonts/livvic-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/livvic-light-webfont.woff") format("woff"), url("../fonts/livvic-light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'livviclight_italic';
+  src: url("../fonts/livvic-lightitalic-webfont.eot");
+  src: url("../fonts/livvic-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/livvic-lightitalic-webfont.woff") format("woff"), url("../fonts/livvic-lightitalic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'livvicextralight';
+  src: url("../fonts/livvic-extralight-webfont.eot");
+  src: url("../fonts/livvic-extralight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/livvic-extralight-webfont.woff") format("woff"), url("../fonts/livvic-extralight-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'livvicmedium_italic';
+  src: url("../fonts/livvic-mediumitalic-webfont.eot");
+  src: url("../fonts/livvic-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/livvic-mediumitalic-webfont.woff") format("woff"), url("../fonts/livvic-mediumitalic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'livvicregular';
+  src: url("../fonts/livvic-regular-webfont.eot");
+  src: url("../fonts/livvic-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/livvic-regular-webfont.woff") format("woff"), url("../fonts/livvic-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'livvicitalic';
+  src: url("../fonts/livvic-regularitalic-webfont.eot");
+  src: url("../fonts/livvic-regularitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/livvic-regularitalic-webfont.woff") format("woff"), url("../fonts/livvic-regularitalic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'livvicmedium';
+  src: url("../fonts/livvic-medium-webfont.eot");
+  src: url("../fonts/livvic-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/livvic-medium-webfont.woff") format("woff"), url("../fonts/livvic-medium-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'livvicthin';
+  src: url("../fonts/livvic-thin-webfont.eot");
+  src: url("../fonts/livvic-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/livvic-thin-webfont.woff") format("woff"), url("../fonts/livvic-thin-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'livvicthin_italic';
+  src: url("../fonts/livvic-thinitalic-webfont.eot");
+  src: url("../fonts/livvic-thinitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/livvic-thinitalic-webfont.woff") format("woff"), url("../fonts/livvic-thinitalic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'livvicsemibold';
+  src: url("../fonts/livvic-semibold-webfont.eot");
+  src: url("../fonts/livvic-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/livvic-semibold-webfont.woff") format("woff"), url("../fonts/livvic-semibold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'livvicsemibold_italic';
+  src: url("../fonts/livvic-semibolditalic-webfont.eot");
+  src: url("../fonts/livvic-semibolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/livvic-semibolditalic-webfont.woff") format("woff"), url("../fonts/livvic-semibolditalic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?67jndy");
+  src: url("../fonts/icomoon.eot?67jndy#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?67jndy") format("truetype"), url("../fonts/icomoon.woff?67jndy") format("woff"), url("../fonts/icomoon.svg?67jndy#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelop:before {
+  content: "\e945";
+}
+
+.icon-mobile:before {
+  content: "\e958";
+}
+
+.icon-download3:before {
+  content: "\e9c7";
+}
+
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+
+.icon-linkedin:before {
+  content: "\eac9";
 }
 
 header #header {
+  position: fixed;
   width: 85%;
   margin: auto;
   max-width: 1450px;
@@ -30,6 +215,9 @@ header #header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  right: 0;
+  left: 0;
+  z-index: 10;
 }
 
 header .box_header .burguer {
@@ -123,9 +311,8 @@ header .box_items {
           justify-content: space-between;
 }
 
-.imagen {
-  background-size: contain;
-  height: 200px;
+header .box_items a {
+  font-family: "livvicbold";
 }
 
 @-webkit-keyframes lineCat {
@@ -144,4 +331,281 @@ header .box_items {
   100% {
     background-position: 25% 0%;
   }
+}
+
+#home {
+  background-color: #fff;
+}
+
+#home .box > div h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+#home .box > div h1 {
+  font-family: 'livvicmedium';
+  font-size: 40px;
+}
+
+#home .box div .imageHome {
+  background-image: url("../img/laptop.png");
+  background-size: cover;
+  height: 427px;
+  width: 580px;
+}
+
+#home #festejo {
+  height: 200px;
+  width: 400px;
+  left: 0;
+  position: absolute;
+  background: url("../img/festejo.png") -889px -996px no-repeat;
+  -webkit-animation: run-cycle 0.6s steps(12) 7, sit-down 0.5s steps(5) 4s 1;
+          animation: run-cycle 0.6s steps(12) 7, sit-down 0.5s steps(5) 4s 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  z-index: 5;
+}
+
+@-webkit-keyframes run-cycle {
+  0% {
+    background-position: -1px 0;
+  }
+  100% {
+    background-position: -1px -2391px;
+  }
+}
+
+@keyframes run-cycle {
+  0% {
+    background-position: -1px 0;
+  }
+  100% {
+    background-position: -1px -2391px;
+  }
+}
+
+@-webkit-keyframes walk-cycle {
+  0% {
+    background-position: -1200px 0;
+  }
+  100% {
+    background-position: -1200px -2391px;
+  }
+}
+
+@keyframes walk-cycle {
+  0% {
+    background-position: -1200px 0;
+  }
+  100% {
+    background-position: -1200px -2391px;
+  }
+}
+
+@-webkit-keyframes sit-down {
+  0% {
+    background-position: -800px 0;
+  }
+  100% {
+    background-position: -800px -1000px;
+  }
+}
+
+@keyframes sit-down {
+  0% {
+    background-position: -800px 0;
+  }
+  100% {
+    background-position: -800px -1000px;
+  }
+}
+
+#perfil {
+  background-color: #fffff3;
+}
+
+#perfil .box {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#perfil .box div:first-child {
+  width: 50%;
+  margin-left: 50px;
+}
+
+#perfil .box div h4 {
+  font-family: 'livvicregular';
+  font-size: 30px;
+  line-height: 1.1;
+  max-width: 435px;
+}
+
+#perfil .box div p {
+  font-size: 24px;
+  margin-top: 15px;
+}
+
+#servicios {
+  background-color: grey;
+}
+
+#servicios .box {
+  color: red;
+}
+
+#portafolio {
+  background-color: #fff;
+}
+
+#portafolio .box {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#portafolio .box .mini:first-child, #portafolio .box .mini:nth-child(2), #portafolio .box .mini:nth-child(3) {
+  margin-bottom: 20px;
+}
+
+#portafolio .box .mini {
+  width: 340px;
+  height: 214px;
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+#portafolio .box .mini .image {
+  background-image: url("../img/0576.jpg");
+  background-size: 100%;
+  height: 214px;
+}
+
+#portafolio .box .mini:hover .filtro {
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out .3s;
+  transition: opacity ease-in-out .3s;
+}
+
+#portafolio .box .mini .filtro {
+  -webkit-transition: opacity ease-in-out .3s;
+  transition: opacity ease-in-out .3s;
+}
+
+#portafolio .box .mini .filtro:after {
+  content: '';
+  overflow: hidden;
+  width: 65%;
+  max-height: 75px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background-size: 100%;
+  background-image: url("../img/logoPotashSprite.png");
+  background-repeat: no-repeat;
+}
+
+#portafolio .box .mini .filtro:before {
+  content: '';
+  background-color: rgba(35, 49, 36, 0.76);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+#portafolio .box .mini.wallon .filtro:after {
+  background-image: url("../img/logo-wallon.png");
+}
+
+#portafolio .box .mini.wallon .image {
+  background-image: url("../img/walon_1537303663.png");
+}
+
+#portafolio .box .mini.movistar .filtro:after {
+  background-image: url("../img/logo-wallon.png");
+}
+
+#portafolio .box .mini.movistar .image {
+  background-image: url("../img/banner_ElDiaDeManaña_solo.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#contacto {
+  background-image: url("../img/lienzo.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#contacto .box {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#contacto .box_contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#contacto .box_contacto .hamburguesa {
+  background-image: url("../img/hamburguesa.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 180px;
+  width: 282px;
+  margin-bottom: 145px;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contacto .box_contacto a {
+  color: #FFF;
+  position: relative;
+  font-size: 55px;
+  color: #000;
+}
+
+#contacto .box_contacto a:after {
+  content: '';
+  width: 100px;
+  height: 100px;
+  background-color: #ffe600;
+  position: absolute;
+  margin: auto;
+  left: -22px;
+  right: 0;
+  z-index: -1;
+  bottom: 0;
+  top: 0;
+  border-radius: 25%;
 }

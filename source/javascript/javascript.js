@@ -1,15 +1,27 @@
-document.addEventListener("DOMContentLoaded", function(){
-    var burguer = document.querySelector('.burguer');
-    var lineEar = document.querySelector('.linesE');
-    var body_velo = document.getElementById('header');
-  
-    function btnBurguer() {
-      burguer.classList.toggle('transform');
-      lineEar.classList.toggle('linesBurguer');
-      body_velo.classList.toggle('velo');
-      // $('velo').fadeToggle();
+(function(){
+  var burguer   = document.querySelector('.burguer');
+  var lineEar   = document.querySelector('.linesE');
+  var elem      = document.getElementById('festejo');
+  function runFestejo() {  
+    var pos = 0;
+    var id = setInterval(frame, 4);
+    function frame() {
+      if (pos == 700) {
+        clearInterval(id);
+      } else {
+        pos++;
+        elem.style.left = pos + "px"; 
+      }
     }
-    burguer.addEventListener('click', function(){
-      btnBurguer();
-    });
-  })
+  }
+  runFestejo();
+
+  burguer.addEventListener('click', function(){
+    burguer.classList.toggle('transform');
+    lineEar.classList.toggle('linesBurguer');
+  });
+
+})();
+$(document).ready(function(){
+  $('#pagepiling').pagepiling();
+});
