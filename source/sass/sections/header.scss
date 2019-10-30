@@ -10,9 +10,8 @@
   #festejo{
       height: 200px;
       width: 400px;
-      // left:-430px;
       position: absolute;
-      background: url('../img/festejo.png') -889px -996px no-repeat;
+      background: url('../img/festejo.png') 0 0 no-repeat;
       animation: 
           // run-cycle .8s steps(12) 7,
           walk-cycle 1s steps(12) 5,
@@ -46,6 +45,11 @@
               color: #fff;
           }
       }
+  }
+  @media only screen and (max-width:600px){
+    #festejo{
+      transform: scale(0.5);
+    }
   }
 }
 header{

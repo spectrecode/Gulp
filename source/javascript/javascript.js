@@ -3,28 +3,16 @@
   var lineEar   = document.querySelector('.linesE');
   var elem      = document.getElementById('festejo');
 
-  // setTimeout(function(){
-  //   var preload = document.querySelector('.preload');
-  //   // preload.classList.add('preload_close');
-  //   preload.style.opacity = '0';
-  //   preload.style.transition = 'all .5s';
-  //   setTimeout(function(){
-  //     preload.style.display = 'none';
-  //   }, 180);
-  // }, 6000);
-  function runFestejo() {  
-    var pos = -430;
-    var id = setInterval(frame, 3);
-    function frame() {
-      if (pos == 880) {
-        clearInterval(id);
-      } else {
-        pos++;
-        elem.style.left = pos + "px"; 
-      }
-    }
-  }
-  // runFestejo();
+  setTimeout(function(){
+    var preload = document.querySelector('.preload');
+    // preload.classList.add('preload_close');
+    preload.style.opacity = '0';
+    preload.style.transition = 'all .5s';
+    setTimeout(function(){
+      preload.style.display = 'none';
+    }, 180);
+  }, 6000);
+  
   function anchorMobile(){
     var nameMenu = document.getElementById('myMenu');
     nameMenu.addEventListener('click', function(){

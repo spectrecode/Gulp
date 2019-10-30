@@ -228,7 +228,7 @@ h3 {
   height: 200px;
   width: 400px;
   position: absolute;
-  background: url("../img/festejo.png") -889px -996px no-repeat;
+  background: url("../img/festejo.png") 0 0 no-repeat;
   -webkit-animation: walk-cycle 1s steps(12) 5, sit-down 0.5s steps(5) 5s 1;
           animation: walk-cycle 1s steps(12) 5, sit-down 0.5s steps(5) 5s 1;
   -webkit-animation-fill-mode: forwards;
@@ -265,6 +265,13 @@ h3 {
   text-align: center;
   font-size: 22px;
   color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .preload #festejo {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
 }
 
 header {
