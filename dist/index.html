@@ -11,7 +11,7 @@
   <body>
     <header>
       <div id="header">
-        <div class="box_header">
+        <div class="header__cat">
           <div class="burguer">
             <div class="linesE">
               <div class="lE1">
@@ -31,7 +31,7 @@
             </div>
           </div>
         </div>
-        <nav class="box_items"><a>Perfil</a><a>Servicios</a><a>Portafolio</a><a>Contacto</a></nav>
+        <nav class="header__items" id="myMenu"><a class="active" data-menuanchor="home" href="#home">Home</a><a data-menuanchor="perfil" href="#perfil">Perfil</a><a data-menuanchor="habilidades" href="#habilidades">Habilidades</a><a data-menuanchor="portafolio" href="#portafolio">Portafolio</a><a data-menuanchor="contacto" href="#contacto">Contacto</a></nav>
       </div>
     </header>
     <div id="pagepiling">
@@ -48,54 +48,66 @@
       </div>
       <div class="section" id="perfil">
         <div class="box">
-          <div>
+          <div class="perfil__text">
             <h4>Hola, Soy Christy Desarrolladora Front End</h4>
             <p>Siempre a la busqueda de nuevos aprendizajes <br/>y que mejor ejemplo que este, pues de nunca pensar trabajar en tecnología actualmente vivo disfrutandolo mucho, además que conoci facetas mias <br/>que nunca imagine.</p>
-            <p>Por cierto, Soy Cat Lover incondicional (se nota, no?)</p>
           </div>
-          <div><img src="img/festejo-got.jpg" width="500px"/></div>
+          <div class="perfil__img"><img src="img/perfil.jpg"/></div>
         </div>
       </div>
-      <div class="section" id="servicios">
-        <div class="box">
-          <div>habilisades</div>
+      <div class="section" id="habilidades">
+        <div class="box habilidades__box">
+          <h3>Habilidades</h3>
+          <ul class="habilidades__list">
+            <li>
+              <div class="habilidades__bar"></div>
+              <div class="habilidades__skill" id="uno">HTML/CSS</div>
+            </li>
+            <li>
+              <div class="habilidades__bar"></div>
+              <div class="habilidades__skill">Sass/Pug/Stylus</div>
+            </li>
+            <li>
+              <div class="habilidades__bar"></div>
+              <div class="habilidades__skill">Javascript/Jquery</div>
+            </li>
+            <li>
+              <div class="habilidades__bar"></div>
+              <div class="habilidades__skill">Photoshop</div>
+            </li>
+            <li>
+              <div class="habilidades__bar"></div>
+              <div class="habilidades__skill">Bootstrap</div>
+            </li>
+            <li>
+              <div class="habilidades__bar"></div>
+              <div class="habilidades__skill">Gulp</div>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="section" id="portafolio">
-        <div class="box">
-          <div class="mini aPotash">
+      <div class="section" id="portafolio">   
+        <div class="box portafolio__box"><a class="mini aPotash" href="http://americas-potash.com/" target="_blank">
             <div class="filtro"></div>
-            <div class="image"></div>
-          </div>
-          <div class="mini antonia">
+            <div class="image"></div></a><a class="mini antonia" href="https://www.mediaimpact.pe/demo/antonia3/" target="_blank">
             <div class="filtro"></div>
-            <div class="image"></div>
-          </div>
-          <div class="mini wallon">
+            <div class="image"></div></a><a class="mini wallon" href="https://www.mediaimpact.pe/demo/antonia3/" target="_blank">
             <div class="filtro"></div>
-            <div class="image"></div>
-          </div>
-          <div class="mini movistar">
+            <div class="image"></div></a><a class="mini inca" href="https://spectrecode.github.io/prueba-inca/dist/index.html" target="_blank">
             <div class="filtro"></div>
-            <div class="image"></div>
-          </div>
-          <div class="mini mailing">
+            <div class="image"></div></a><a class="mini nokia" href="http://www.movistar.com.pe/nokia-8" target="_blank">
             <div class="filtro"></div>
-            <div class="image"></div>
-          </div>
-          <div class="mini">
+            <div class="image"></div></a><a class="mini mailing" href="http://mailing.serviciosmovistar.com/2019/Febrero/mailing_capta/" target="_blank">
             <div class="filtro"></div>
-            <div class="image"></div>
-          </div>
-        </div>
+            <div class="image"></div></a></div>
       </div>
       <div class="section" id="contacto">
-        <div class="box">
+        <div class="box contacto__box">
           <h3>Contacto</h3>
-          <div class="box_contacto">
-            <div class="hamburguesa"><a class="icon-download3" href=""></a></div>
-            <div class="hamburguesa"><a class="icon-envelop" href=""></a></div>
-            <div class="hamburguesa"><a class="icon-linkedin" href=""></a></div>
+          <div class="contacto__list">
+            <div class="hamburguesa"><a class="icon" href="https://www.linkedin.com/in/christy-ccb/" target="_blank"><img class="burger" src="./img/hamburguesa.png"/><i class="icon-linkedin"></i></a></div>
+            <div class="hamburguesa"><a class="icon" href="mailto:mchristy.ccb@gmail.com?Subject=Vio%20tu%20CV"><img class="burger" src="./img/hamburguesa.png"/><i class="icon-envelop"></i></a></div>
+            <div class="hamburguesa"><a class="icon" href="./img/christy_cv.pdf" download="Christy CV"><img class="burger" src="./img/hamburguesa.png"/><i class="icon-download3"></i></a></div>
           </div>
         </div>
       </div>

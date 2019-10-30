@@ -1,20 +1,72 @@
+.preload{
+  height: 100vh;
+  z-index: 101;
+  position: absolute;
+  width: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  #festejo{
+      height: 200px;
+      width: 400px;
+      // left:-430px;
+      position: absolute;
+      background: url('../img/festejo.png') -889px -996px no-repeat;
+      animation: 
+          // run-cycle .8s steps(12) 7,
+          walk-cycle 1s steps(12) 5,
+          sit-down .5s steps(5) 5s 1;
+      animation-fill-mode: forwards;
+      z-index: 5;
+      .bar{
+          height: 30px;
+          width: 80%;
+          background: #fff;
+          margin: auto;
+          bottom: -15px;
+          position: absolute;
+          right: 0;
+          left: 0;
+          border-radius: 10px;
+          &:before{
+              content: '';
+              position: absolute;
+              background: #000;
+              width: 0;
+              height: 30px;
+              animation: preloader 6s forwards;
+              border-radius: 10px;
+          }
+          p{
+              position: relative;
+              line-height: 29px;
+              text-align: center;
+              font-size: 22px;
+              color: #fff;
+          }
+      }
+  }
+}
 header{
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  height: 90px;
+  background-color: rgba(252, 252, 252, 0.5);
   #header{
-    position: fixed;
     width: 85%;
     margin:auto;
     max-width: 1450px;
     display: flex;
     justify-content: space-between;
-    height: 90px;
     align-items: center;
-    right: 0;
-    left: 0;
-    z-index: 10;
+    height: inherit;
   }
-  .box_header{
+  .header__cat{
+    flex: 0 1 45%;
     .burguer{
-      cursor:pointer;
       width: 70px;
       position: relative;
       transition: all 0.5s ease;
@@ -32,12 +84,12 @@ header{
         margin-bottom: 6px;
         height:4px;
         background-color: #000000;
-        transition: all 0.2s ease;
+        transition: all 0.5s ease;
       }
       .linesE{
         display: flex;
         justify-content: space-between;
-        transition: opacity 0.2s ease;
+        transition: opacity 0.5s ease;
         .line{
           width: 20px;
           &:first-child{
@@ -45,10 +97,6 @@ header{
             margin-left: auto;
             margin-right: auto;
           }
-        }
-        &.linesBurguer{
-          opacity: 0;
-          transition: opacity 0.3s ease;
         }
       }
       .linesH{
@@ -58,43 +106,149 @@ header{
           margin-right: auto;
         }
       }
-    }
-    .burguer.transform {
-      transform: rotate(90deg);
-      width: 60px;
-      .line{
-        margin-bottom: 8px;
-        background-color: #fff;
-      }
-      .linesH{
-        .line:last-child{
-          width: 60px;
-        }
-      }
-        &:before{
-        display: none;
-      }
-      // .line:first-child{
-      //   width: 18px;
-      //   margin: 6px auto;
-      // }
-      // .line:nth-child(2){
-      //   width: 30px;
-      //   margin: 6px auto;
-      // }
-    }
+    }    
   }
-  .box_items{
-    width: 100%;
-    max-width: 500px;
+  .header__items{
+    flex: 1;
     display: flex;
     justify-content: space-between;
     a{
       font-family: "livvicbold";
+      padding: 8px 5px;
+      position: relative;  
+      &.active{
+        &:after{
+          content: '';
+          position: absolute;
+          height: 3px;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          background:#000;
+          bottom: 0;
+          animation: activo ease-in-out.5s forwards;
+        }
+      }
+    }    
+  }
+  @media only screen  and (max-width:768px){
+    .header__cat{
+      flex: 0 1 25%;
+    }
+  }
+  @media only screen  and (max-width:600px){
+    height: 70px;
+    #header{
+      width: 95%;
+    }    
+    .header__cat{
+      z-index: 10;
+      .burguer{
+        width: 60px;
+        margin: auto;
+        .line{
+          &:nth-child(3){
+            display: none;
+          }
+        }
+        .linesE{
+          .line{
+            width: 17px;
+          }
+        }
+        .linesH{
+          .line:last-child{
+            width: 44px;
+          }
+        }
+        &.transform {
+          // transform: rotate(90deg);
+          width: 45px;
+          .line{
+            margin-bottom: 0;
+            background-color: #fff;
+            transition: all .5s;
+            &:first-child{
+              transform: rotate(45deg);
+            }
+            &:nth-child(2){
+              transform: rotate(-45deg);
+              margin: 0;
+              position: relative;
+              bottom: 4px;
+            }
+            &:last-child{
+              opacity: 0;
+            }
+          }
+          &:before{
+            content: none;
+          }
+        }
+      }
+    }
+    .header__items{
+      visibility: hidden;
+      width: 0;
+      opacity: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      transition: width 0.5s, visibility 0s, opacity 0.5s linear;
+      &.hi_mobile{
+        display: flex;
+        background-color: rgba(#000, 0.8);
+        position: fixed;
+        height: 100vh;
+        bottom: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        visibility: visible;
+        a{
+          color: #fcfcfc;
+          font-size: 30px;
+          font-family: $f_semi_bold;
+          padding: 8px;
+          margin-bottom: 10px;
+        }
+      }
+      a.active{
+        &:after{
+          background-color: #fcfcfc;
+        }
+      }
     }
   }
 }
 @keyframes lineCat{
   0%{background-position:76% 100%}
   100%{background-position:25% 0%}
+}
+@keyframes activo{
+  0%{width: 0; opacity: 0;}
+  100%{width: 100%; opacity: 1;}
+}
+@keyframes preloader{
+  90%{
+      width: 100%;
+      opacity: 1;
+  }
+  100%{
+      width: 100%;
+  }
+}
+@keyframes run-cycle {  
+  0% { background-position: -1px 0; } 
+  100% {background-position: -1px -2391px; } 
+}
+@keyframes walk-cycle {  
+  0% { background-position: -1200px 0; } 
+  100% {background-position: -1200px -2391px; } 
+}
+@keyframes sit-down {  
+  0% { background-position: -800px 0; } 
+  100% {background-position: -800px -1000px; } 
 }

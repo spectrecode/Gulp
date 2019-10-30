@@ -1,5 +1,6 @@
 #home{
-    background-color: #fff;
+    background-image:url('../img/bg_home.png');
+    background-size: cover;
     .box{
         & > div{
             h2{
@@ -11,36 +12,27 @@
                 font-size: 40px;
             }
         }
-        & div .imageHome{
-            background-image: url('../img/laptop.png');
-            background-size: cover;
-            height: 427px;
-            width: 580px;
+    }
+    @media only screen and (max-width: 1024px){
+        background-position-x: 50%;
+    }
+    @media only screen and (max-width: 768px){
+        background-image:url('../img/bg_home_mb.png');
+        background-position-y: center;
+        .box{
+            & > div{
+                h2{
+                    font-size: 20px;
+                }
+                h1{
+                    font-size: 30px;
+                }
+            }
         }
     }
-    #festejo{
-        height: 200px;
-        width: 400px;
-        left:0;
-        position: absolute;
-        background: url('../img/festejo.png') -889px -996px no-repeat;
-        animation: 
-            run-cycle .6s steps(12) 7,
-            // walk-cycle 1s steps(12) 4,
-            sit-down .5s steps(5) 4s 1;
-        animation-fill-mode: forwards;
-        z-index: 5;
+    @media only screen and (max-width: 768px){
+        .box{
+            margin-bottom: 150px;
+        }
     }
-}
-@keyframes run-cycle {  
-    0% { background-position: -1px 0; } 
-    100% {background-position: -1px -2391px; } 
-}
-@keyframes walk-cycle {  
-    0% { background-position: -1200px 0; } 
-    100% {background-position: -1200px -2391px; } 
-}
-@keyframes sit-down {  
-    0% { background-position: -800px 0; } 
-    100% {background-position: -800px -1000px; } 
 }

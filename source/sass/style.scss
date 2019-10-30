@@ -8,21 +8,28 @@ a{
 	text-decoration: none;
 	color: #000;
 }
-.section{
-	.box{
-        display: flex;
-        width: 85%;
-        margin: auto;
-		max-width: 1440px;
-		flex-flow: wrap;
-		justify-content: space-around;
-		h3{
-			font-size:30px;
-			font-family: 'livvicsemibold';
-		}
+.box{
+	display: flex;
+	width: 85%;
+	margin: auto;
+	max-width: 1440px;
+}
+h3{
+	font-size:30px;
+	font-family: 'livvicsemibold';
+}
+@media only screen and (max-width: 768px){
+	h3{
+		font-size:28px;
+	}
+}
+@media only screen and (max-width: 600px){
+	#pp-nav{
+		display: none;
 	}
 }
 @import "globals/fonts";
+@import "globals/variables";
 @import "./sections/header";
 @import "./sections/home";
 @import "./sections/perfil";

@@ -3,46 +3,113 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: bottom;
-    .box{
+    .contacto__box{
         flex-direction: column;
         text-align: center;
+        height: 430px;
+        justify-content: flex-start;        
     }
-    .box_contacto{
+    .contacto__list{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        margin-top: 30px;
+        flex: 1 auto;
+        height: inherit;
         .hamburguesa{
-            background-image:url('../img/hamburguesa.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 180px;
-            width: 282px;
-            margin-bottom: 145px;
-            z-index: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            flex: 1 0 30%;
+            margin-bottom: auto;
+            height: 165px;
+            cursor: pointer;
+            position: relative;
+            // img, a{
+            //     width: 100%;
+            //     transition: ease-in-out .5s;
+            //     position: absolute;
+            //     left: 0;
+            //     right: 0;
+            //     margin: auto;
+            // }
+            // .burger{
+            //     z-index: 1;
+            //     &:hover{
+            //         transform:rotateY(180deg);
+            //         opacity: 0;
+            //     }
+            //     &:hover + .icon{
+            //         opacity: 1;
+            //         transform:rotateY(360deg);
+            //         z-index: 1;
+            //     }
+            // }
+            .burger{
+                width: inherit;
+                transition: ease-in-out .5s;
+                &:hover{
+                    transform:rotateY(180deg);
+                    opacity: 0;
+                    z-index: 1;
+                }
+                &:hover + i{
+                    opacity: 1;
+                    transform:rotateY(360deg);
+                }
+            }
+            .icon{
+                display: flex;
+                width: 85%;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                transition: ease-in-out .5s;
+                i{
+                    position: absolute;
+                    opacity: 0;
+                    font-size: 80px;
+                    transform:rotateY(180deg);
+                    transition: ease-in-out .5s;
+                }
+            }
+            // .icon{
+            //     opacity: 0;
+            //     font-size: 70px;
+            //     transform:rotateY(180deg);
+            //     height: inherit;
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: center;
+            //     min-height: 140px;
+            //     i{
+            //         z-index: 10;
+            //         position: relative;
+            //         width: 100%;
+            //         height: 100%;
+            //     }
+            // }
         }
-        a{
-            color: #FFF;
-            position:relative;
-            font-size: 55px;
-            color:#000;
+    }
+    @media only screen and (max-width: 768px){
+        background-size: 180%;
+        background-position: -162px bottom;
+        .contacto__list {
+            .hamburguesa{
+                height: 126px;
+                .icon{
+                    i{
+                        font-size: 30px;
+                    }
+                }
+            }
         }
-        a:after{
-            content: '';
-            width: 100px;
-            height: 100px;
-            background-color: #ffe600;
-            position: absolute;
-            margin: auto;
-            left: -22px;
-            right: 0;
-            z-index: -1;
-            bottom: 0;
-            top: 0;
-            border-radius: 25%;
+    }
+    @media only screen and (max-width: 375px){
+        .contacto__list {
+            flex-direction: column;
+            .hamburguesa{
+                .icon{
+                    width: 65%;
+                }
+            }
         }
-        
     }
 }

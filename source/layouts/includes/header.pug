@@ -1,6 +1,6 @@
 header
 	#header
-		.box_header
+		.header__cat
 			.burguer
 				.linesE
 					.lE1
@@ -14,8 +14,9 @@ header
 					.line
 					.line
 					.line
-		nav.box_items
-			a Perfil
-			a Servicios
-			a Portafolio
-			a Contacto
+		nav.header__items#myMenu
+			a(data-menuanchor="home" class="active" href='#home') Home
+			a(data-menuanchor="perfil" href='#perfil') Perfil
+			a(data-menuanchor="habilidades" href='#habilidades') Habilidades
+			a(data-menuanchor="portafolio" href='#portafolio') Portafolio
+			a(data-menuanchor="contacto" href='#contacto') Contacto
